@@ -1,0 +1,27 @@
+.mainContainer {
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.itemsContainer {
+    max-width: 1015px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px 20px;
+    margin: 0 30px;
+}
+
+@media (max-width:776px) {
+    .itemsContainer {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px)  {
+    .itemsContainer {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

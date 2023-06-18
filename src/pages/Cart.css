@@ -1,0 +1,112 @@
+.mainContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.cartItemsContainer {
+    max-width: 1050px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 50px;
+    margin: 0 30px;
+}
+
+.cartSummary {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.cartSummaryHead {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cartSummaryHead #head>p {
+    color: green;
+    font-weight: 700;
+    font-size: larger;
+}
+
+.cartSummaryHead>p {
+    font-weight: bold;
+    color: rgba(85, 85, 85);
+}
+
+#total {
+    color: black;
+}
+
+h1 {
+    color: darkgreen;
+}
+
+.cartSummary #amountContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cartSummary #amountContainer button {
+    padding: 10px 30px;
+    background-color: green;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#amountContainer>p {
+    font-weight: bold;
+    color: rgba(85, 85, 85);
+}
+
+#totalPrice {
+    color: black;
+    font-weight: bold;
+}
+
+.emptyCart {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 250px;
+}
+
+.emptyCart p {
+    font-size: larger;
+    font-weight: bolder;
+    transform: scale(1.2, 1.2);
+}
+
+.emptyCart button {
+    padding: 10px 30px;
+    background-color: rgb(1, 169, 1);
+    border-radius: 10px;
+    font-size: larger;
+    font-weight: bolder;
+    color: white;
+    border: none;
+}
+
+.emptyCart button:hover {
+    cursor: pointer;
+    background-color: white;
+    color: rgb(1, 169, 1);
+    border: 1px solid rgb(1, 169, 1);
+}
+
+
+@media (max-width:776px) {
+    .cartItemsContainer {
+        grid-template-columns: 1fr;
+    }
+}

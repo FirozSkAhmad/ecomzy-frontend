@@ -1,0 +1,84 @@
+nav {
+    background-color: black;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+}
+
+p:hover {
+    cursor: pointer;
+}
+
+.linkContainer {
+    width: 180px;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+.linkContainer p,
+.slinkContainer p {
+    color: white;
+    font-size: large;
+}
+
+.slinkContainer {
+    width: 300px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rLinkContainer {
+    width: 130px;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+.rLinkContainer p {
+    color: white;
+    font-size: large;
+}
+
+
+.linkContainer .count {
+    width: 15px;
+    height: 15px;
+    background-color: green;
+    border-radius: 50%;
+    position: absolute;
+    right: 80px;
+    top: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.count>p {
+    font-size: smaller;
+}
+
+
+
+.active>p {
+    color: green;
+}
+
+#cartIcon {
+    color: white;
+    transform: scale(1.4, 1.4);
+}

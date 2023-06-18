@@ -1,0 +1,72 @@
+.card {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 8px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color:rgba(255, 255, 255, 0.094);
+}
+
+.card:hover{
+    cursor: pointer;
+    transform: scale(1.08,1.08);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: white;
+    transition: 0.3s;
+}
+
+#heading{
+    font-weight: 900;
+    font-size: large;
+}
+
+#description{
+    font-weight: 600;
+    color: rgb(96, 96, 96);
+}
+
+#image {
+    width: 142px;
+    height: 180px;
+    background-color: rgb(203, 203, 203);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card img{
+    width: 100%;
+    height: 100%;
+}
+
+#priceContainer{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#price p{
+    color: green;
+    font-weight: bold;
+    font-size: large;
+}
+
+.card button{
+    border: 2px solid rgba(62, 62, 62, 0.750);
+    color: rgba(62, 62, 62, 0.750);
+    padding: 5px 10px;
+    background-color: white;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+.card button:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    transition: 0.3s;
+}
